@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <title>지식이지</title>
+    <script>
+      var path = location.pathname;
+      if (path === "/app" || path.indexOf("/app/") === 0) {
+        location.replace("/app/" + location.search + location.hash);
+      }
+    </script>
+  </head>
+  <body style="font-family: sans-serif; padding: 32px;">
+    <p>페이지를 찾지 못했어요.</p>
+    <p><a href="/">처음으로</a> · <a href="/app/">지식이지 앱</a></p>
+  </body>
+</html>
